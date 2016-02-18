@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="andy" fetch="https://android.googlesource.com" />
   <remote  name="rb" fetch="https://github.com/roeblatt3/" />
 
   <!-- Removals from PureNexus -->
+  <remove-project name="android_device_asus_deb" />
+  <remove-project name="android_device_asus_flo" />
+  <remove-project name="android_device_google_atv" />
+  <remove-project name="android_device_google_molly" />
+  <remove-project name="android_device_htc_flounder" />
+  <remove-project name="android_device_huawei_angler" />
+  <remove-project name="android_device_lge_bullhead" />
+  <remove-project name="android_device_lge_hammerhead" />
+  <remove-project name="android_device_moto_shamu" />
+  <remove-project name="android_kernel_asus_flo" />
+  <remove-project name="android_kernel_google_molly" />
+  <remove-project name="android_kernel_htc_flounder" />
+  <remove-project name="android_kernel_huawei_angler" />
+  <remove-project name="android_kernel_lge_bullhead" />
+  <remove-project name="android_kernel_lge_hammerhead" />
+  <remove-project name="android_kernel_moto_shamu" />
+  <remove-project name="proprietary_vendor_google" />
+  <remove-project name="proprietary_vendor_huawei" />
+  <remove-project name="proprietary_vendor_lge" />
+  <remove-project name="proprietary_vendor_moto" />
+
   <remove-project name="platform/hardware/invensense" />
 
   <!-- Additions from Roeblatt3 -->
+  <project path="device/samsung/manta" name="device_samsung_manta" remote="rb" revision="6.0" />
   <project path="external/stlport" name="external_stlport" remote="rb" revision="6.0" />
   <project path="hardware/invensense" name="hardware_invensense" remote="rb" revision="6.0" />
   <project path="hardware/samsung_slsi/exynos5" name="hardware_samsung_slsi_exynos5" remote="rb" revision="6.0" />
-  <project path="vendor/samsung/manta" name="android_vendor_samsung_manta" remote="rb" revision="6.0" />
-  <project path="device/samsung/manta" name="android_device_samsung_manta" remote="rb" revision="6.0" />
+  <project path="vendor/audience/manta" name="vendor_audience_manta" remote="rb" revision="6.0" />
+  <project path="vendor/broadcom/manta" name="vendor_broadcom_manta" remote="rb" revision="6.0" />
+  <project path="vendor/samsung/manta" name="vendor_samsung_manta" remote="rb" revision="6.0" />
 
+  <!-- Additions from AOSP 5.1.1 -->
+<!--  <project path="device/samsung/manta" name="device/samsung/manta" remote="andy" groups="device,manta" revision="refs/tags/android-5.1.1_r34" />
+  <project path="external/stlport" name="platform/external/stlport" remote="andy" groups="pdk" revision="refs/tags/android-5.1.1_r34" />
+  <project path="hardware/invensense" name="platform/hardware/invensense" remote="andy" groups="invensense" revision="refs/tags/android-5.1.1_r34" />
+  <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" remote="andy" groups="exynos5" revision="refs/tags/android-5.1.1_r34" />
+-->
 </manifest>
